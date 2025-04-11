@@ -9,10 +9,10 @@ export function sumSmallNumbers(a: number, b: number) {
 }
 
 export function sum(a: number, b: number) {
-  if (a === 0) {
+  if (a === 0 || a === -0) {
     return b;
   }
-  if (b === 0) {
+  if (b === 0 || b === -0) {
     return a;
   }
   if (a < 10 && b < 10) {
